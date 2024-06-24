@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LendDirect" >
+	<test name="ManagementAccountsTest_Funding">
+		<classes>
+			<class name="com.InvestorPortal.tests.LoginInvestorPortal" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

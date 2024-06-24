@@ -1,0 +1,1071 @@
+<html>
+<head>
+<title>TestNG:  BalanceSheet_Reporting</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BalanceSheet_Reporting</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>82/14/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 16 16:04:51 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>2560 seconds (2560316 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateStartAndEndDateCalendarClose()'><b>validateStartAndEndDateCalendarClose</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateStartAndEndDateCalendarClose(BalanceSheetTest.java:5364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1537428160", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1537428160'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateStartAndEndDateCalendarClose(BalanceSheetTest.java:5364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFacilityDisbursement()'><b>validateFacilityDisbursement</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateFacilityDisbursement(BalanceSheetTest.java:2719)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace563784593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace563784593'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateFacilityDisbursement(BalanceSheetTest.java:2719)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>43</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanBalanceLoanRefColumnDataSorting()'><b>validateLoanBalanceLoanRefColumnDataSorting</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateLoanBalanceLoanRefColumnDataSorting(BalanceSheetTest.java:1584)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2035743034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2035743034'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateLoanBalanceLoanRefColumnDataSorting(BalanceSheetTest.java:1584)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>28</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateInternalRefNoInLoanDatabase()'><b>validateInternalRefNoInLoanDatabase</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateInternalRefNoInLoanDatabase(BalanceSheetTest.java:2320)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace838679986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace838679986'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateInternalRefNoInLoanDatabase(BalanceSheetTest.java:2320)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>159</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateValuesUpdateBasedOnCustomDateRange()'><b>validateValuesUpdateBasedOnCustomDateRange</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateValuesUpdateBasedOnCustomDateRange(BalanceSheetTest.java:4956)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1079305563", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1079305563'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateValuesUpdateBasedOnCustomDateRange(BalanceSheetTest.java:4956)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>34</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFacilityReferenceDataSorting()'><b>validateFacilityReferenceDataSorting</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateFacilityReferenceDataSorting(BalanceSheetTest.java:2252)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace859996466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace859996466'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateFacilityReferenceDataSorting(BalanceSheetTest.java:2252)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>22</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFacilityBalanceTableAscendingOrderDataSorting()'><b>validateFacilityBalanceTableAscendingOrderDataSorting</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateFacilityBalanceTableAscendingOrderDataSorting(BalanceSheetTest.java:2204)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace365972545", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace365972545'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateFacilityBalanceTableAscendingOrderDataSorting(BalanceSheetTest.java:2204)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanBalanceValueInTopRowOfCashBalanceTable()'><b>validateLoanBalanceValueInTopRowOfCashBalanceTable</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateLoanBalanceValueInTopRowOfCashBalanceTable(BalanceSheetTest.java:7735)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1297066141", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1297066141'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateLoanBalanceValueInTopRowOfCashBalanceTable(BalanceSheetTest.java:7735)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanBalanceRefNameInLoanDatabase()'><b>validateLoanBalanceRefNameInLoanDatabase</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateLoanBalanceRefNameInLoanDatabase(BalanceSheetTest.java:1671)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace849359798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace849359798'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateLoanBalanceRefNameInLoanDatabase(BalanceSheetTest.java:1671)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>137</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateUpdatedDisbursedAmount()'><b>validateUpdatedDisbursedAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateUpdatedDisbursedAmount(BalanceSheetTest.java:2060)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace179809345", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace179809345'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateUpdatedDisbursedAmount(BalanceSheetTest.java:2060)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>142</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCashBalanceValueInTopRowOfCashBalanceTable()'><b>validateCashBalanceValueInTopRowOfCashBalanceTable</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateCashBalanceValueInTopRowOfCashBalanceTable(BalanceSheetTest.java:7243)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1347091004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1347091004'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateCashBalanceValueInTopRowOfCashBalanceTable(BalanceSheetTest.java:7243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCalendarDatePickerClosedOnClickedOutside()'><b>validateCalendarDatePickerClosedOnClickedOutside</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateCalendarDatePickerClosedOnClickedOutside(BalanceSheetTest.java:6070)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace373408086", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace373408086'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateCalendarDatePickerClosedOnClickedOutside(BalanceSheetTest.java:6070)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateAllocatedAmountValueInTopRowOfCashBalanceTable()'><b>validateAllocatedAmountValueInTopRowOfCashBalanceTable</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateAllocatedAmountValueInTopRowOfCashBalanceTable(BalanceSheetTest.java:8160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace779792640", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace779792640'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateAllocatedAmountValueInTopRowOfCashBalanceTable(BalanceSheetTest.java:8160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>19</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCurrentCashAmount()'><b>validateCurrentCashAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.Reporting.tests.BalanceSheetTest.validateCurrentCashAmount(BalanceSheetTest.java:6592)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1756887179", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1756887179'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.Reporting.tests.BalanceSheetTest.validateCurrentCashAmount(BalanceSheetTest.java:6592)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>22</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCurrentLoanBalance()'><b>validateCurrentLoanBalance</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>18</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateUpdatedAmountsAfterSearchByMonth()'><b>validateUpdatedAmountsAfterSearchByMonth</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>23</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateDisbursementsAmountVisibility()'><b>validateDisbursementsAmountVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>20</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateNavigationToFundingSummaryTab()'><b>validateNavigationToFundingSummaryTab</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>23</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanAmountIsSumOfAllBorrowerLoanAmount()'><b>validateLoanAmountIsSumOfAllBorrowerLoanAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>9</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateMonthCalendarClosedOnClickedOutside()'><b>validateMonthCalendarClosedOnClickedOutside</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>35</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCustomSearchStartAndEndDateCalendarPopup()'><b>validateCustomSearchStartAndEndDateCalendarPopup</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>23</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanBalanceAmountColumnDataSorting()'><b>validateLoanBalanceAmountColumnDataSorting</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>13</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCashBalanceSectionLoanInAmount()'><b>validateCashBalanceSectionLoanInAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>8</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateSelectYearFromCalendarForSearchByMonth()'><b>validateSelectYearFromCalendarForSearchByMonth</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>21</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanBalanceAmountsVisibility()'><b>validateLoanBalanceAmountsVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>28</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCalendarMonthsOnClickSearchByMonth()'><b>validateCalendarMonthsOnClickSearchByMonth</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>19</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFacilityTableRepaymentsAmountVisibility()'><b>validateFacilityTableRepaymentsAmountVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>21</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFacilitiesAmountIsSumOfAllFacilityAmount()'><b>validateFacilitiesAmountIsSumOfAllFacilityAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>8</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateBalanceSheetDetailsSectionsVisibility()'><b>validateBalanceSheetDetailsSectionsVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>6</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCashBalanceSectionsVisibility()'><b>validateCashBalanceSectionsVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>21</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateNavigationToEditLoanFacilitySummaryPage()'><b>validateNavigationToEditLoanFacilitySummaryPage</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>27</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCashBalanceForPayments()'><b>validateCashBalanceForPayments</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>90</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanBalanceAmount()'><b>validateLoanBalanceAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>16</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLiabilitiesAmountValue()'><b>validateLiabilitiesAmountValue</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>3</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateDefaultSortOrderOfCashBalanceTable()'><b>validateDefaultSortOrderOfCashBalanceTable</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>17</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCashBalanceSectionFacilitiesOutAmount()'><b>validateCashBalanceSectionFacilitiesOutAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>7</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanAccountSectionsVisibility()'><b>validateLoanAccountSectionsVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>13</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateBalanceSheetSummerySectionsVisibility()'><b>validateBalanceSheetSummerySectionsVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>4</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCalendarClosedOnClickedOutside()'><b>validateCalendarClosedOnClickedOutside</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>19</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanBlanceTableDescendingOrderDataSorting()'><b>validateLoanBlanceTableDescendingOrderDataSorting</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>112</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateSortingOfCashBalanceTable()'><b>validateSortingOfCashBalanceTable</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>33</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCashBalanceSectionClosingAmount()'><b>validateCashBalanceSectionClosingAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>8</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validatePaymentAndReceiptColumns()'><b>validatePaymentAndReceiptColumns</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>21</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateAmountsNotUpdated()'><b>validateAmountsNotUpdated</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>10</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateAssetBalanceSectionAmountsVisibility()'><b>validateAssetBalanceSectionAmountsVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>6</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFacilityRefNumber()'><b>validateFacilityRefNumber</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>32</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateRepaymentsAmountVisibility()'><b>validateRepaymentsAmountVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>20</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCashBalanceColumn()'><b>validateCashBalanceColumn</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>21</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFacilitiesBalanceAmountsVisibility()'><b>validateFacilitiesBalanceAmountsVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>23</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateUpdatedAmountsAfterSelectingSearchByMonths()'><b>validateUpdatedAmountsAfterSelectingSearchByMonths</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>27</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateReverseChronologicalOrderOfCashBalanceTable()'><b>validateReverseChronologicalOrderOfCashBalanceTable</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>32</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCashBalanceForReceipt()'><b>validateCashBalanceForReceipt</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>136</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateReportingBalanceSheetPageVisibility()'><b>validateReportingBalanceSheetPageVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>27</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCashBalanceSectionAmountsVisibility()'><b>validateCashBalanceSectionAmountsVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>6</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanBalanceTableColumns()'><b>validateLoanBalanceTableColumns</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>3</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFacilityTableClosingBalanceAmountVisibility()'><b>validateFacilityTableClosingBalanceAmountVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>20</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFundingAccountTabTableColumns()'><b>validateFundingAccountTabTableColumns</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>18</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanRefNoInLoanDatabase()'><b>validateLoanRefNoInLoanDatabase</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>18</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateNavigationToNewLoanSummaryTab()'><b>validateNavigationToNewLoanSummaryTab</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>8</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateDrawdownsAmountVisibility()'><b>validateDrawdownsAmountVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>22</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCashBalanceSectionOpeningAmount()'><b>validateCashBalanceSectionOpeningAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>8</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCustomSearchWithoutStartDate()'><b>validateCustomSearchWithoutStartDate</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>28</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanBlanceTableAscendingOrderDataSorting()'><b>validateLoanBlanceTableAscendingOrderDataSorting</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>27</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateAssetAmountValue()'><b>validateAssetAmountValue</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>3</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFacilityBlanceTableDescendingOrderDataSorting()'><b>validateFacilityBlanceTableDescendingOrderDataSorting</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>34</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCustomSearchCalenderPopup()'><b>validateCustomSearchCalenderPopup</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>3</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateReportingBalanceSheetPageTabs()'><b>validateReportingBalanceSheetPageTabs</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>3</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateAssetBalanceAmount()'><b>validateAssetBalanceAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>8</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCashBalanceSectionFacilitiesInAmount()'><b>validateCashBalanceSectionFacilitiesInAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>8</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCalendarYearByForwardAndBackwordArrows()'><b>validateCalendarYearByForwardAndBackwordArrows</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>22</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateValuesOnApplyingCustomSearchCalender()'><b>validateValuesOnApplyingCustomSearchCalender</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>7</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanBalanceAmountInLoanDatabase()'><b>validateLoanBalanceAmountInLoanDatabase</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>31</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCashBalanceTableColumnsVisibility()'><b>validateCashBalanceTableColumnsVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>20</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateNavigateEditBridgeLoanPageFromLoanBalance()'><b>validateNavigateEditBridgeLoanPageFromLoanBalance</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>6</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateDefaultDateIsCurrentDate()'><b>validateDefaultDateIsCurrentDate</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>13</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanAccountTabTableColumns()'><b>validateLoanAccountTabTableColumns</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>33</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCustomSearchWithoutEndDate()'><b>validateCustomSearchWithoutEndDate</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>22</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateAmountsWithoutSearchBySelectMonth()'><b>validateAmountsWithoutSearchBySelectMonth</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>8</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFacilityBalanceTableColumnVisibility()'><b>validateFacilityBalanceTableColumnVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>6</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateClosingBalanceAmountVisibility()'><b>validateClosingBalanceAmountVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>20</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateAppliedDateInCustomSearchField()'><b>validateAppliedDateInCustomSearchField</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>6</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCashBalanceSectionLoanOutAmount()'><b>validateCashBalanceSectionLoanOutAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>8</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFacilityBalanceTableColumnsVisibility()'><b>validateFacilityBalanceTableColumnsVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>3</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFundingAccountSectionsVisibility()'><b>validateFundingAccountSectionsVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>12</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFacilityBlanceTableAscendingOrderDataSorting()'><b>validateFacilityBlanceTableAscendingOrderDataSorting</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>21</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCalendarYearByForwardAndBackwordArrow()'><b>validateCalendarYearByForwardAndBackwordArrow</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>4</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCurrentAllocatedAmount()'><b>validateCurrentAllocatedAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>18</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateAssetAndLiabilitiesAmountVisibility()'><b>validateAssetAndLiabilitiesAmountVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>4</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateCustomFieldInitialSelectedDate()'><b>validateCustomFieldInitialSelectedDate</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>6</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateSearchByMonthCalendarMonths()'><b>validateSearchByMonthCalendarMonths</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>20</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateAmountsWhenUserPerformLoanDisbursement()'><b>validateAmountsWhenUserPerformLoanDisbursement</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>174</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateFacilityAmountInFundingDatabase()'><b>validateFacilityAmountInFundingDatabase</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>47</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateAssetAndFacilitiesBalanceEqualAmount()'><b>validateAssetAndFacilitiesBalanceEqualAmount</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>8</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateSelectStartAndEndDateFromCalendar()'><b>validateSelectStartAndEndDateFromCalendar</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>54</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateLoanBalanceTableColumnsVisibility()'><b>validateLoanBalanceTableColumnsVisibility</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>5</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+<tr>
+<td title='com.Reporting.tests.BalanceSheetTest.validateNavigationToEditLoanFacilitySummaryTab()'><b>validateNavigationToEditLoanFacilitySummaryTab</b><br>Test class: com.Reporting.tests.BalanceSheetTest</td>
+<td></td>
+<td>36</td>
+<td>com.Reporting.tests.BalanceSheetTest@66f57048</td></tr>
+</table><p>
+</body>
+</html>
